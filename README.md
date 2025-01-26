@@ -228,8 +228,8 @@ class Product:
             f"Entry Date: {self.entry_date}, Exit Date: {exit_date_str}"
         )
 
-
-
+docstrings
+Se usan anotaciones de tipo (List[Product], Optional[Product]).
 
 from typing import List, Optional
 from .product import Product
