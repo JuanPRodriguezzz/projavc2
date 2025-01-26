@@ -96,8 +96,8 @@ if __name__ == "__main__":
     report = Report(inventory)
     report.generate_current_report()
 ```
-
-``` Script para crear entorno virtual
+## Script para crear entorno virtual
+``` 
 #!/bin/bash
 
 # Crear entorno virtual
