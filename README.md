@@ -149,7 +149,7 @@ python3 src/inventory_management.py
 ## Diagrama de Clases
 El diagrama de clases está disponible en `class_diagram.md`.
 ```
-
+``` python
 from datetime import date
 
 class Product:
@@ -227,10 +227,10 @@ class Product:
             f"Quantity: {self.quantity}, Category: {self.category}, "
             f"Entry Date: {self.entry_date}, Exit Date: {exit_date_str}"
         )
-
+```
 docstrings
 Se usan anotaciones de tipo (List[Product], Optional[Product]).
-
+``` python
 from typing import List, Optional
 from .product import Product
 
@@ -309,10 +309,6 @@ class Inventory:
         except (ValueError, TypeError) as e:
             print(f"Error in update_quantity: {e}\n")
 
-
-
-
-
 import threading
 from .inventory import Inventory
 
@@ -339,6 +335,7 @@ class Report:
         # Aquí podrías añadir más lógica, como generar un PDF o un CSV.
         # Por ahora, solo listaremos el inventario.
         self.inventory.list_inventory()
+```
 
 Se encapsula la lógica de generación en _generate_report_logic para mantener limpio el método público.
 
